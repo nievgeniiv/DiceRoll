@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center_vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/dice_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/empty_dice"
+        tools:src="@drawable/empty_dice"
+        />
+    
+    <Button
+        android:id="@+id/roll_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/roll"
+        android:layout_gravity="center_horizontal"/>
+
+</LinearLayout>
+
+<!--
+    android:orientation="vertical" - ориентация слоев по вертикали
+    android:layout_gravity="center_vertical" - ориентировать по-центру по вертикали
+    android:textSize="30sp" - размер шрифта
+    android:text="@string/roll" - ссылка на ресурс string в папке res
+    android:src="@drawable/empty_dice" - ссылка на изображение
+    tools:src="@drawable/empty_dice" - пространство имен. В данном случае он показывет на макете изображене, но при сборке
+                                        приложения будет исспольщоваться android:src="@drawable/empty_dice"
+-->
